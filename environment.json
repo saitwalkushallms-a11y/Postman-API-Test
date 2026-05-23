@@ -10,43 +10,43 @@
 		},
 		{
 			"key": "endpoint_url",
-			"value": "",
+			"value": "https://apiqa.on24.com",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "Client id",
-			"value": "",
+			"value": "51137",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "EventId",
-			"value": "",
+			"value": "9000709068",
 			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "email",
-			"value": "",
+			"value": "ks49oiste6zi@inbfw.com",
 			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "firstname",
-			"value": "",
+			"value": "KS49oiste6zi",
 			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "lastname",
-			"value": "",
+			"value": "KS49oiste6zi",
 			"type": "any",
 			"enabled": true
 		},
 		{
 			"key": "email_env",
-			"value": "",
+			"value": "jimyf0bz8v8je@inbfw.com",
 			"type": "any",
 			"enabled": true
 		}
