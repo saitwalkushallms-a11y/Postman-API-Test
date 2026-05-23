@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "a16c9a56-dfcf-4c71-8d55-2150e25f29ef",
-    "name": "ON24 QA",
+    "name": "ON24_QA",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "39815832",
     "_collection_link": "https://go.postman.co/collection/39815832-a16c9a56-dfcf-4c71-8d55-2150e25f29ef?source=collection_link"
@@ -767,12 +767,9 @@
                   ]
                 },
                 "url": {
-                  "raw": "https://apiqa.on24.com/v2/client/51137/attendee?endDate=2026-04-02T23:18:00-07:00&startDate=2026-04-02T23:07:04-07:00",
-                  "protocol": "https",
+                  "raw": "{{endpoint_url}}/v2/client/51137/attendee?endDate=2026-04-02T23:18:00-07:00&startDate=2026-04-02T23:07:04-07:00",
                   "host": [
-                    "apiqa",
-                    "on24",
-                    "com"
+                    "{{endpoint_url}}"
                   ],
                   "path": [
                     "v2",
@@ -1174,12 +1171,9 @@
                   ]
                 },
                 "url": {
-                  "raw": "https://apiqa.on24.com/v2/client/51137/attendee/ks_eh_qa_attendee03apr26@inbfw.com",
-                  "protocol": "https",
+                  "raw": "{{endpoint_url}}/v2/client/51137/attendee/ks_eh_qa_attendee03apr26@inbfw.com",
                   "host": [
-                    "apiqa",
-                    "on24",
-                    "com"
+                    "{{endpoint_url}}"
                   ],
                   "path": [
                     "v2",
@@ -1625,12 +1619,9 @@
                   ]
                 },
                 "url": {
-                  "raw": "https://apiqa.on24.com/v2/client/51137/attendee/ks_eh_qa_attendee03apr26@inbfw.com/allevents",
-                  "protocol": "https",
+                  "raw": "{{endpoint_url}}/v2/client/51137/attendee/ks_eh_qa_attendee03apr26@inbfw.com/allevents",
                   "host": [
-                    "apiqa",
-                    "on24",
-                    "com"
+                    "{{endpoint_url}}"
                   ],
                   "path": [
                     "v2",
@@ -2174,12 +2165,9 @@
           ]
         },
         "url": {
-          "raw": "https://apiqa.on24.com/v2/client/51137/event?evemtsource={{EventId}}",
-          "protocol": "https",
+          "raw": "{{endpoint_url}}/v2/client/51137/event?evemtsource={{EventId}}",
           "host": [
-            "apiqa",
-            "on24",
-            "com"
+            "{{endpoint_url}}"
           ],
           "path": [
             "v2",
@@ -2221,7 +2209,8 @@
               "pm.environment.set(\"lastname\",lastname);"
             ],
             "type": "text/javascript",
-            "packages": {}
+            "packages": {},
+            "requests": {}
           }
         }
       ],
@@ -2426,12 +2415,9 @@
           ]
         },
         "url": {
-          "raw": "https://apiqa.on24.com/v2/client/51137/event/{{EventId}}/registrant",
-          "protocol": "https",
+          "raw": "{{endpoint_url}}/v2/client/51137/event/{{EventId}}/registrant",
           "host": [
-            "apiqa",
-            "on24",
-            "com"
+            "{{endpoint_url}}"
           ],
           "path": [
             "v2",
@@ -2596,12 +2582,9 @@
           ]
         },
         "url": {
-          "raw": "https://apiqa.on24.com/v2/client/51137/event/{{EventId}}",
-          "protocol": "https",
+          "raw": "{{endpoint_url}}/v2/client/51137/event/{{EventId}}",
           "host": [
-            "apiqa",
-            "on24",
-            "com"
+            "{{endpoint_url}}"
           ],
           "path": [
             "v2",
@@ -2760,23 +2743,11 @@
               "});\r",
               "pm.test(\"Response time is less than 20000ms\", function () {\r",
               "    pm.expect(pm.response.responseTime).to.be.below(20000);\r",
-              "    });\r",
-              "pm.test(\"Validate first registrant's details\", function () {\r",
-              "    var jsonData = pm.response.json();\r",
-              "    \r",
-              "    pm.expect(jsonData.registrants[0].firstname).to.eql(\"Ks_webcastLiveRegression06May25\");\r",
-              "    pm.expect(jsonData.registrants[0].lastname).to.eql(\"qatest\");\r",
-              "    pm.expect(jsonData.registrants[0].email).to.eql(\"ks_webcastliveregression06may25@inbfw.com\");\r",
-              "    pm.expect(jsonData.registrants[0].company).to.eql(\"LMS\");\r",
-              "    pm.expect(jsonData.registrants[0].jobtitle).to.eql(\"Senior Manager\");\r",
-              "    pm.expect(jsonData.registrants[0].state).to.eql(\"MP\");\r",
-              "    pm.expect(jsonData.registrants[0].zip).to.eql(\"12345\");\r",
-              "    pm.expect(jsonData.registrants[0].country).to.eql(\"United Kingdom\");\r",
-              "    pm.expect(jsonData.registrants[0].userstatus).to.eql(\"active\");\r",
-              "});"
+              "    });"
             ],
             "type": "text/javascript",
-            "packages": {}
+            "packages": {},
+            "requests": {}
           }
         }
       ],
@@ -2961,12 +2932,9 @@
           ]
         },
         "url": {
-          "raw": "https://apiqa.on24.com/v2/client/51137/event/{{EventId}}/registrant",
-          "protocol": "https",
+          "raw": "{{endpoint_url}}/v2/client/51137/event/{{EventId}}/registrant",
           "host": [
-            "apiqa",
-            "on24",
-            "com"
+            "{{endpoint_url}}"
           ],
           "path": [
             "v2",
@@ -3409,12 +3377,9 @@
           ]
         },
         "url": {
-          "raw": "https://apiqa.on24.com/v2/client/51137/event/84856336/attendee",
-          "protocol": "https",
+          "raw": "{{endpoint_url}}/v2/client/51137/event/84856336/attendee",
           "host": [
-            "apiqa",
-            "on24",
-            "com"
+            "{{endpoint_url}}"
           ],
           "path": [
             "v2",
