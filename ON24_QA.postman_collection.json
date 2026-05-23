@@ -1817,7 +1817,7 @@
               "var username=\"jim\"+random;\r",
               "\r",
               "pm.environment.set(\"email_env\",useremail);\r",
-              "pm.environment.set(\"name_env\",name);"
+              "pm.environment.set(\"firstname\",username);"
             ],
             "type": "text/javascript",
             "packages": {},
